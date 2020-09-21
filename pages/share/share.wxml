@@ -1,0 +1,26 @@
+<!--pages/test/test.wxml-->
+<view class="shareBox">
+<view class="title">{{title}}</view>
+<image src="{{pic}}" class="pic" ></image>
+</view>
+<view class="share">
+    <button open-type="share" class="shareBtn" size='mini'>
+      <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAOVBMVEVHcEz///////////////////////////////////////////////////////////////////////99PJZNAAAAEnRSTlMAMOCwQGDQ8IAQkFAgn79wwKDPjjl1AAABuUlEQVR4Xu3VwXKFIAwF0IsASVBR8/8f27IBnSeitatOz455w30kSsTf9G8amW1KMy9O8JifSXdCNHhgiqQfBi+4R6KeowV3jKRNwaAr6qXeIcRqx4xLSfVVwqw3RDR5rQbNTtcjGoT2vZJNi+AAUyJIcK7uYGT1Tw0AjGW54dSkhUO2lgMgEy0mnGEtPLJQ1gIArtfHQQtyABYtrACStKBWBVWag+5QmgfdMfg0ah/ZxaGFtSd4gYyc0qCUEo/yLGDwEB90z/oHAVHAdJJ6N8DDDZ0Rwdf7uTsi3OX++cYF1ybO+/sJVhsCvF7zyLw2uIm0w5TLcGKt95w8xlAKE1MOna5e5nGqR92NnfVw4127C4R4nBOhXun6k0UmZ0XYXWl21yqSwxAUZIb0A09aJa6npDiTFg6tBOf0DkYrwS2PAiBBjxw/CShdrpx/GkA/6oFvzkYWvWM6fp+IR15JM4ugfeFQAbEgE/fNYHlWQdleCGnPgCKy/GDiO1zqdiGiw5BeWYFXCUHwKmEV3GFafdhwF3ceYN+0UeMdvk28rRlhi3mx4CHj+NviBPlMqitemVYVvOMMfsu/L0Ath0CgH1P9AAAAAElFTkSuQmCC"></image>
+      <text>微信好友</text>
+    </button>
+    <button  bindtap="cloneUrl"  class="shareBtn" size='mini'>
+      <image src="/img/share_icon_5.png"></image>
+      <text>二维码链接</text>
+    </button>
+    <button bindtap="showEwm" class="shareBtn" size='mini'  wx:if="{{ewm}}">
+      <image src="/img/share_icon_4.png"></image>
+      <text>二维码</text>
+    </button>
+</view>
+<!-- 二维码遮罩层 -->
+<view class="ewmshow" bindtap="showEwm" wx:if="{{ewmshow}}">
+</view>
+<!-- 二维码图片 -->
+<image src="{{ewm}}" class="ewm-img" wx:if="{{ewmshow}}"></image>
+<!-- 点击二维码保存按钮 -->
+<view bindtap="saveEwm" class="ewm-baoc" wx:if="{{ewmshow}}">保存二维码</view>

@@ -1,0 +1,124 @@
+/* pages/test/test.wxss */
+page{
+
+}
+.title{
+  width:599rpx;
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30rpx ;
+  margin-bottom: 20rpx ;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 47rpx
+}
+.shareBtnnew{
+    background: rgba(42,0,255,1);
+    padding: 10rpx 40rpx;
+    color: #fff;
+    position: fixed;
+    bottom: 40rpx;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 50rpx;
+}
+.pic{
+  width:100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+}
+.share{
+  display: flex;
+  position: fixed;
+  bottom: 0rpx;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10000;
+  background-color: #fff
+}
+button:after{
+border: 0rpx solid transparent
+}
+button.shareBtn{
+  font-size:36rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  margin-top: 46rpx;
+width: 120rpx;
+height: 120rpx;
+  overflow: visible;
+  padding: 0;
+  margin-bottom: 70rpx
+}
+.shareBtn image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+}
+.shareBtn{
+  position: relative;
+  background: #49b233;
+  border-radius:120rpx;
+}
+.shareBtn text{
+position: absolute;
+bottom: -63rpx;
+color: #333;
+width: 128%;
+left: -14rpx;
+font-size: 30rpx
+}
+.shareBtn:nth-of-type(2){
+   background: #e8be59
+}
+.shareBtn:nth-of-type(2) image{
+   background: #e8be59;
+   transform: scale(1.4);
+   border-radius: 50%
+}
+.shareBtn:nth-of-type(3){
+   background: #fea671
+}
+.ewmshow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+.ewm-img{
+  position: fixed;
+width: 70%;
+height: 873rpx;
+z-index: 1000;
+top: 42%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.ewm-baoc{
+  position: fixed;
+  width: 600rpx;
+  height: 100rpx;
+  z-index: 1000;
+  top: 70%;
+  left: 50%;
+  background: #e4393c;
+  border-radius: 50rpx;
+  color: #fff;
+  line-height: 100rpx;
+  text-align: center;
+  margin-left: -300rpx
+}

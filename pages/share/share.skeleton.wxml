@@ -1,0 +1,20 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/5/26 上午9:51:21 
+使用方法：
+1. 在"pages\share\share.wxml"中使用`include`指令引入此模板，
+2. 在"pages\share\share.wxss"中使用`import`指令引入"pages\share\share.skeleton.wxss"
+3. 书写对应的逻辑，来控制骨架屏的显示与隐藏
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<view class="sk-container">
+  <view class="shareBox">
+    <view class="title sk-transparent sk-text-19-5652-549 sk-text">狄拉达 夏季男装新款男士时尚潮流简约宽松版纯棉百搭短袖T恤男 DZT1066</view>
+    <image class="pic sk-image"></image>
+  </view>
+  <view class="share"><button class="shareBtn sk-button sk-pseudo sk-pseudo-circle" open-type="share" size="mini"><image class="sk-image"></image><text class="sk-transparent sk-text-28-2609-329 sk-text" style="background-size: 78.1282% 2.1563rem; background-position-x: 50%;">微信好友</text></button>
+    <button
+      class="shareBtn sk-button sk-pseudo sk-pseudo-circle" size="mini">
+      <image class="sk-image"></image><text class="sk-transparent sk-text-28-2609-37 sk-text" style="background-size: 97.6602% 2.1563rem; background-position-x: 50%;">二维码链接</text></button>
+  </view>
+</view>

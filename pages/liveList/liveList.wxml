@@ -1,0 +1,48 @@
+<!-- 
+<button open-type="contact"  
+session-from="7moor|rebort|http://ndhimg.520shq.com/UploadFile/LM/20190307/2019030715041064307.jpg" 
+send-message-title="商品名称" 
+send-message-img="http://ndhimg.520shq.com/UploadFile/LM/20190307/2019030715041064307.jpg" 
+send-message-path="pages/index/index?url=http://fxyhjts.520shq.com/localQuickPurchase/distributionVA/goodsDetail/5e1eaa160522c927348c26de/0/4585030?shareSeq=4585030&checkShare=1" 
+show-message-card="true">14564</button> -->
+<view class="liveList" bindtap="goLive" data-item="{{item}}"  wx:for="{{room}}" wx:key="roomid" wx:if="{{item.liveStatus<104}}" >
+ <view class="live-title">
+      <view  class="title">{{item.name}}</view>
+    </view>
+    <view class="timeR">
+      <text class="authorName">{{item.anchorName}}</text>
+      <text class="subTime">{{item.startTime}}</text>
+      </view>
+  <image src="{{item.shareImg}}"></image>
+  <view class="liveList-box">
+    <view class="live-status">
+    <view class="start" wx:if="{{item.liveStatus==101}}">
+        直播中
+      </view>
+      <view class="start" wx:if="{{item.liveStatus==102}}">
+        未开始
+      </view>
+         <view class="start" wx:if="{{item.liveStatus==103}}">
+        已结束
+      </view>
+        <view class="start" wx:if="{{item.liveStatus==104}}">
+        禁播
+      </view>
+        <view class="start" wx:if="{{item.liveStatus==105}}">
+        暂停中
+      </view>
+        <view class="start" wx:if="{{item.liveStatus==106}}">
+        异常
+      </view>
+       <view class="start" wx:if="{{item.liveStatus==107}}">
+        已过期
+      </view>
+    </view>
+    <!-- <view class="denger" wx:if="{{item.liveStatus==102}}">
+        <subscribe room-id="{{item.roomid}}" ></subscribe>
+    </view> -->
+  </view>
+</view>
+<image src="/img/liveNone.png" class="noneLive"  wx:if="{{!room.length}}"></image>
+
+<!-- <navigator url="/pages/videoBack/videoBack?id=6" class="videoBack">回放</navigator> -->

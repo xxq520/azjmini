@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/liveList/liveList",
+    "pages/liveShare/liveShare",
+    "pages/goodDetail/goodDetail",
+    "pages/share/share"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱之家商城",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "live-player-plugin": {
+      "version": "1.0.13",
+      "provider": "wx2b03c6e691cd7370" 
+    }
+  }
+}
